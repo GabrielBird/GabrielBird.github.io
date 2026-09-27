@@ -1,0 +1,54 @@
+:root{--ink:#2b1d3f;--indigo:#3d2c7a;--indigo2:#2b1d55;--cream:#fff6ea;--lav:#e7dcff;--pink:#ff6f91;--yellow:#ffcf3f;--tomato:#ff5a3c;--mint:#63d3bd;--muted:#6b5a86;color-scheme:light}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--indigo);color:var(--ink);font:600 17px/1.55 Nunito,ui-rounded,system-ui,sans-serif}
+a{color:inherit}
+.wrap{max-width:980px;margin:0 auto;padding-inline:20px}
+.sky{background:
+  radial-gradient(circle at 50% 38%,rgba(255,111,145,.45),rgba(255,111,145,0) 55%),
+  repeating-conic-gradient(from 0deg at 50% 60%,#4a37a0 0 7.5deg,#5a45c9 7.5deg 15deg);color:var(--cream)}
+header.top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:18px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font:400 22px/1 'Lilita One',sans-serif}
+.brand img{width:40px;height:40px;border-radius:10px;border:2.5px solid var(--ink)}
+nav a{font-weight:900;text-decoration:none;margin-left:16px;opacity:.9}
+nav a:hover{opacity:1;text-decoration:underline}
+.hero{text-align:center;padding-block:10px 0}
+.logo{margin:0;font:400 clamp(56px,11vw,112px)/.95 'Cherry Bomb One','Lilita One',sans-serif;-webkit-text-stroke:10px var(--ink);paint-order:stroke fill;text-shadow:0 7px 0 var(--ink);letter-spacing:-.01em}
+.logo .word{display:inline-block;white-space:nowrap}
+.logo .word span{display:inline-block}
+.tag{font:900 clamp(18px,3vw,24px)/1.3 Nunito,sans-serif;color:var(--lav);margin:14px 0 0}
+.gang{display:block;width:min(560px,100%);height:auto;margin:10px auto -6px}
+.cta{display:inline-block;margin:6px 0 34px;background:var(--tomato);color:#fff;text-decoration:none;font:400 24px/1 'Lilita One',sans-serif;padding:16px 26px;border:3px solid var(--ink);border-radius:18px;box-shadow:0 6px 0 var(--ink);-webkit-text-stroke:4px var(--ink);paint-order:stroke fill}
+.cta small{display:block;margin-top:6px;font:800 13px/1 Nunito,sans-serif;-webkit-text-stroke:0;opacity:.95}
+main{background:var(--cream);padding-block:48px 64px}
+h2{font:400 clamp(30px,5vw,42px)/1 'Lilita One',sans-serif;margin:0 0 18px;color:var(--pink);-webkit-text-stroke:6px var(--ink);paint-order:stroke fill;text-wrap:balance}
+h3{font:400 22px/1.15 'Lilita One',sans-serif;margin:0 0 6px}
+p{margin:0 0 14px;max-width:68ch}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-bottom:44px}
+.card{background:#fff;border:3px solid var(--ink);border-radius:22px;padding:18px;box-shadow:5px 5px 0 var(--ink)}
+.card p{margin:0;font-size:16px}
+.chip{display:inline-grid;place-items:center;width:40px;height:40px;border-radius:12px;border:2.5px solid var(--ink);font:400 20px/1 'Lilita One',sans-serif;margin-bottom:10px}
+.cats{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px}
+.cat{background:var(--lav);border:3px solid var(--ink);border-radius:22px;padding:10px 14px 16px;text-align:center}
+.cat img{width:100%;max-width:170px;height:auto}
+.cat h3{-webkit-text-stroke:4px var(--ink);paint-order:stroke fill;font-size:24px}
+.cat p{font-size:14px;margin:0 auto}
+.doc{max-width:760px}
+.doc h2{margin-top:6px}
+.doc h3{margin-top:28px}
+.doc ul{padding-left:22px;margin:0 0 14px}
+.doc li{margin-bottom:6px}
+.updated{color:var(--muted);font-weight:800;font-size:14px}
+.faq details{background:#fff;border:3px solid var(--ink);border-radius:18px;padding:14px 18px;margin-bottom:12px}
+.faq summary{cursor:pointer;font:400 20px/1.2 'Lilita One',sans-serif;list-style:none}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::before{content:'+ ';color:var(--pink)}
+.faq details[open] summary::before{content:'– '}
+.faq details p{margin:10px 0 0}
+.mail{display:inline-block;background:var(--yellow);border:3px solid var(--ink);border-radius:14px;padding:10px 16px;font-weight:900;text-decoration:none;box-shadow:0 4px 0 var(--ink)}
+footer{background:var(--indigo2);color:var(--lav);font-size:14px;padding-block:22px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:10px 22px;justify-content:space-between}
+footer a{font-weight:900}
+a:focus-visible{outline:3px solid var(--yellow);outline-offset:3px;border-radius:6px}
+@media (max-width:560px){nav a{margin-left:10px;font-size:15px}.brand span{display:none}}
+.cats .cat:last-child:nth-child(odd){grid-column:1/-1}
